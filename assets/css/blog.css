@@ -1,0 +1,81 @@
+/*
+ * Globals
+ */
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  //background-color: #333;
+  background-color:#ffffff;
+}
+body {
+  color: #fff;
+  //text-align: center;
+
+}
+
+
+/*
+ * header intro
+ */
+.intro-header {
+  background-position: left;
+  background-clip:border-box;
+  height:70vh;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.header-overlay {
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  //overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.header-text {
+  vertical-align:middle;
+  margin-top:20vh;
+}
+
+#header1 {
+  font-size:86px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+#header2 {
+  font-size:34px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.article-background {
+  padding-top:10vh;
+  //background-color:#ffffff;
+  padding-bottom:10vh;
+}
+
+.main-content {
+  background-color:#ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size:20px;
+  color: rgba(0,0,0,0.8);
+  //height:100vh;
+  //width:100vw;
+}
+
+
+
+
+

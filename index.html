@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+    <title>Jason Chin Portfolio | UC Berkeley Student | Software Engineer</title>
+    <meta name="generator" content="Jekyll v3.7.3" />
+    <meta property="og:title" content="Jason Chin Portfolio | UC Berkeley Student | Software Engineer" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Jason Chin Portfolio | UC Berkeley Student | Software Engineer" />
+    <meta property="og:description" content="Jason Chin Portfolio | UC Berkeley Student | Software Engineer" />
+    <link rel="canonical" href="http://localhost:4000/" />
+    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:site_name" content="Jason Chin Portfolio | UC Berkeley Student | Software Engineer" />
+
+    <!--HAVE TO LOAD JQUERY BEFORE BOOTSTRAP-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/main_website.css" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/sidebar.css" />
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>JsonChin</title>
+    </head>
+
+    <body>
+        <div class="site-wrapper">
+            <!-- <div id="sidebar-wrapper">
+      {% include 'main_website/sidebar.html' %}
+    </div> -->
+
+            <div class="site-wrapper-inner" id="fullpage">
+
+                <div class="section cover-container" id="home-top">
+                    <div id="cover-bg-img">
+
+                    </div>
+
+                    <div id="cover-overlay"></div>
+
+                    <div id="cover-content">
+                        <div class="row cover-row">
+                            <div class="col-md-12">
+                                <h1 class="cover-name-desc" id="name-header">Jason Chin</h1>
+                                <h4 class="cover-name-desc" id="title-desc">Student @ UC Berkeley | CS/STATS Double Major</h4>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2 cover-panel">
+                                <h4>Resume</h4>
+                                <hr class="panel-underline">
+                                <p class="panel-items">
+                                    <i class="material-icons link-pointer">chevron_right</i>
+                                    <a href="/assets/files/resume.pdf" target="_blank">
+                                        Last updated 5/14/18</a>
+                                </p>
+                            </div>
+                            <div class="col-md-2 cover-panel">
+                                <h4>Contact me</h4>
+                                <hr class="panel-underline">
+                                <p class="panel-items">jlchin (at) berkeley.edu</p>
+                                <p class="panel-items">650-417-1616</p>
+                            </div>
+                            <div class="col-md-2 cover-panel">
+                                <h4>Other places</h4>
+                                <hr class="panel-underline">
+                                <p class="panel-items">
+                                    <i class="material-icons link-pointer">chevron_right</i>
+                                    <a href="https://www.linkedin.com/in/jason-chin" target="_blank">
+                                        LinkedIn</a>
+                                </p>
+                                <p class="panel-items">
+                                    <i class="material-icons link-pointer">chevron_right</i>
+                                    <a href="https://github.com/jsonchin" target="_blank">
+                                        Github</a>
+                                </p>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+
+                        <i class="material-icons cover-bottom-scroll-arrow">arrow_drop_down</i>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="section intro">
+                    <div class="row intro-row">
+                        <div class="col-md-3 picture-col">
+                            <div id="me-img-container">
+                                <img class="me-img img-responsive" src="/assets/images/me_scaled.png">
+                                <p id="me-img-text">
+                                    Willing to work for burritos.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-8 intro-text-col">
+                            <h1 class="section-header">About me</h1>
+
+                            <div class="section-text">
+                                <p>Hey! I'm Jason, an 3rd year undergraduate CS/STATS double major studying at UC Berkeley.
+                                    After a long day of learning about Computer Science and Statistics in my classes, I go
+                                    back to my apartment to go do my favorite hobby: more coding!</p>
+                                <p>Well why am I a CS/STATS double major? First of all, I love the amount of problem solving
+                                    that I do everyday to follow along in lectures and to crunch through coursework, and
+                                    how applicable these problem solving skills are elsewhere in life. Secondly, I love the
+                                    collaboration between the majors: one provides the tools for computation and the realization
+                                    of ideas through writing amazing software, whereas the other provides methods of analysis
+                                    and reason, but together they work very well in as a team to solve problems of any sort.</p>
+                                <p>This summer (2017) I had the opportunity to work at WePay as a Software Engineer Intern.
+                                    In the process of doing so, I've learned a great deal about industry, about programming,
+                                    and about myself. The experiences and the project that I worked on while I was there
+                                    taught me a lot and have made me into a stronger developer and engineer.</p>
+                                <p>The previous school year, I worked on a team of students for the Berkeley Institute for Data
+                                    Science: Data Science for Social Good Projects Team (a mouthful I know, so BIDS:DSSG
+                                    for short). Our project was to automagically match research grants based on their title,
+                                    description, and other attributes to faculty members and to create a recommendation system
+                                    that updates faculty preferences of research grants depending on whether they liked the
+                                    research grant we suggest to them (something similar to Pandora).</p>
+
+                                <p>Besides that, I'm kept busy at Berkeley with
+                                    <a href="#course-header" id="course-btn-link">coursework</a> and when I do have free time away from research projects and midterms,
+                                    I work on my own
+                                    <a href="#personal-projects-start">personal projects</a> because who doesn't like building things? Recently I've been alternating
+                                    between two projects, NBA DFS because I like basketball and a mobile game like Pokemon
+                                    GO because I played a lot of Pokemon GO over the summer.</p>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+                <div class="section experience">
+                    <h1 class="experience-header" style="">Experience</h1>
+
+                    <div class="row experience-row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="experience-panel experience-row-odd">
+                                <h2 class="experience-panel-header-odd">Software Engineer Intern @ WePay</h2>
+                                <img src="/assets/images/wepay_logo.png" class="img-responsive experience-panel-img-odd" width="180px" height="180px">
+                                <p class="experience-panel-text">
+                                    In my 2017 summer, I interned as a Software Engineer Intern at WePay. During my time there, we developed an SDK generator
+                                    to automatically generate customizable SDKs for the WePay API in multiple languages.
+                                    By developing this tool, we saved WePay engineers time and resources since the SDKs for
+                                    each language can be automatically updated upon an API version change instead of having
+                                    an engineer painstakingly update each SDK. We also designed and structured the SDK to
+                                    provide a user-friendly experience for WePay partners.
+                                </p>
+
+                                <p class="experience-panel-text">
+                                    Beyond programming and developing, I had the great opportunity to work and talk with many engineers who have taught me a
+                                    great deal about software engineering and industry. The process of agile, the thorough
+                                    code reviews, and the endless discussions over small details and design decisions have
+                                    all made me a stronger developer and engineer. I'm incredibly grateful to have been given
+                                    the opportunity to work there.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row experience-row" id="personal-projects-start">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="experience-panel experience-row-even">
+                                <h2 class="experience-panel-header-even">
+                                    <!-- <a href="{% url 'nba_blog' %}"> -->
+                                    NBA DFS Data Scraping + Modeling
+                                    <!-- </a> -->
+                                </h2>
+                                <img src="/assets/images/nba_icon.png" class="img-responsive experience-panel-img-odd">
+                                <p class="experience-panel-text">
+                                    For the past few years I've been working on this project (predicting NBA players' nightly performance). I've built a lot
+                                    of tools to help automate tasks and make my workflow cleaner and more efficient. For
+                                    example, a
+                                    <a href="https://github.com/jsonchin/nba_stats_scraper_db_storage">automatic data scraper and database storage</a> which digests an easy to input data format
+                                    and scrapes and stores all of the data from that endpoints into a database. Or a
+                                    <a href="https://github.com/jsonchin/nba_dfs_dashboard">NBA DFS dashboard</a> built using Django to help inform me of last minute news and to
+                                    help me analyze and aggregate data. Modeling players' performance with this data was
+                                    a different beast. I did a lot of exploratory data analysis and trial and error to figure
+                                    out which features were the most effective in predicting a player's performance. Then
+                                    I tried out and ensembled many models (eventually stuck with XGBoost: gradient boosted
+                                    trees) to predict their performance. And finally, I utilized the k-best Knapsack algorithm
+                                    to optimize for the best lineups each night. I'm not satisfied with my model's predictions,
+                                    so this is cycle I'll have to keep repeating until I get results that I like.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row experience-row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="experience-panel experience-row-odd">
+                                <h2 class="experience-panel-header-odd">
+                                    <!-- <a href="{% url 'highlight_tool' %}"> -->
+                                    Highlight Tool: Google Docs Add-on
+                                    <!-- </a> -->
+                                </h2>
+                                <img src="/assets/images/highlighttoolicon.png" class="img-responsive experience-panel-img-even">
+                                <p class="experience-panel-text">
+                                    In my senior year of high school, I designed a Google Docs Add-on that allows users to highlight and organize their Google
+                                    Docs. Initially, it was made for my History high school teacher and her students as a
+                                    personal project for the Computer Science club but over the past few years it has amassed
+                                    over 250,000 users across the world in classrooms. The add-on has been such a success
+                                    due to the teachers and users who suggested features they wanted to see implemented and
+                                    emailed me about their user experience. Shoutout to Devin Hess (Director of Technology
+                                    Education @ Berkeley) for his direct contributions, collaboration, and insights into
+                                    what a teacher wanted and needed in the classroom.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row experience-row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="experience-panel experience-row-even">
+                                <h2 class="experience-panel-header-even">BIDS: DSSG Projects Team</h2>
+                                <img src="/assets/images/bids_logo.png" class="img-responsive experience-panel-img-odd">
+                                <p class="experience-panel-text">
+                                    During Spring 2017, a group of students and I tackled the problem of automating the process of recommending research grants
+                                    to Berkeley faculty for the Berkeley Research Development Office. It was quite the difficult
+                                    problem that put up lots roadblocks for us on the way such as the lack of data on previous
+                                    matches (privacy/security concern), the generality of language of research grants, faculty
+                                    members not updating their profiles, and so on. In the end, we were able to build a small
+                                    web app using Flask to showcase our model and its predictions. Our model utilized a combination
+                                    of TFIDF (term frequency inverse document frequency), simple dot products, and word nets
+                                    such as GloVE and Word2Vec. I'm really glad I had a team to work on it with since I really
+                                    enjoyed arguing and discussing solutions to those roadblocks that I mentioned.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row experience-row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="experience-panel experience-row-odd">
+                                <h2 class="experience-panel-header-odd">URAP (Research Assistant)</h2>
+                                <img src="/assets/images/urap_logo.png" class="img-responsive experience-panel-img-even">
+                                <p class="experience-panel-text">
+                                    In my first research assistant position, I analyzed and managed my professor's magazine circulation data. To help the data
+                                    entry process into Google Spreadsheets, I wrote scripts in Google App Scripts to automate
+                                    tasks such as moving images from folders and to validate data. To showcase the data,
+                                    I built d3.js visualizations to show the change over time of and the geographic distribution
+                                    of magazine sales. And finally to automate the data transfer process to a database without
+                                    my professor having to worry too much about the technical side of things, I wrote a Python
+                                    script to take data from Google Spreadsheets and transfer it directly to a MySQL database
+                                    without having to download any csv files or such. I wanted to make it as easy as possible
+                                    for my professor and his colleagues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="section courses">
+                    <div class="row">
+                        <div id="course-header">
+                            <h1>Coursework</h1>
+                            <p>
+                                <em>4.00 Technical GPA | 3.981 Overall GPA</em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row courses-row">
+                        <div class="course-col" style="margin-left:auto;">
+                            <h1>Computer Science</h1>
+                            <ul>
+                                <li>The Structure and Interpretation of Computer Programs (A+) (CS61A)</li>
+                                <li>Data Structures (A+) (CS61BL)</li>
+                                <li>Machine Structures (A+) (CS61C)</li>
+                                <li>Discrete Math and Probability Theory (A+) (CS70)</li>
+                                <li>Efficient Algorithms and Intractable Problems (A+) (CS170)</li>
+                                <li>Introduction to Database Systems (A+) (CS186)</li>
+                                <li>Artificial Intelligence (A+) (CS188)</li>
+                                <li>Machine Learning (A) (CS189)</li>
+                                <li>Natural Language Processing (A+) (INFO159)</li>
+                                <li>Operating Systems (A+) (CS162)</li>
+                                <li>Computer Security (Spring 2018) (CS161)</li>
+                                <li>Data Science (Spring 2018) (DS100)</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="course-col course-col-center">
+                            <h1>Statistics</h1>
+                            <ul>
+                                <li>Concepts in Computing with Data (A) (STAT133)</li>
+                                <li>Concepts of Probability (A+) (STAT134)</li>
+                                <li>Concepts of Statistics (A) (STAT135)</li>
+                                <li>Game Theory (A+) (STAT155)</li>
+                                <li>Time Series (A+) (STAT153)</li>
+                                <li>Linear Models (Spring 2018) (STAT151A)</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="course-col">
+                            <h1>Other</h1>
+                            <ul>
+                                <li>Multivariable Calculus (A+) (MATH53)</li>
+                                <li>Linear Algebra and Differential Equations (A+) (MATH54)</li>
+                                <li>Designing Information Devices and Systems I (A+) (EE16A)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <p style="text-align:center;">Here's my DAG of courses I've taken and plan to take since looking at a list is boring.</p>
+                    <p style="text-align:center;">Hover over a node to see the full course name.</p>
+                    <div id="d3-dag-container" style="min-width:900px; width:50%;">
+                        <svg id="d3-svg" width="100%" height="100%"></svg>
+                    </div>
+                </div>
+
+
+                <div id="bottom-of-page"></div>
+
+            </div>
+
+        </div>
+    </body>
+
+    </html>
+
+
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/main_website.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#name-header").animate({ "opacity": 1 }, 500,
+                function () {
+
+                    $('<img/>').attr('src', '/assets/images/bg_scaled.png').on("load", function () {
+                        $(this).remove();
+                        $('#cover-bg-img').css('background-image', '/assets/images/bg_scaled.png');
+
+                        $("#sidebar-wrapper, .cover-bottom-scroll-arrow, #cover-bg-img, #title-desc, .cover-panel, #cover-overlay").animate({ "opacity": 1 }, 1000);
+                    });
+                });
+
+            setInterval(function () {
+                $(".cover-bottom-scroll-arrow").animate({ "opacity": 0.5 }, 1000, function () {
+                    $(".cover-bottom-scroll-arrow").animate({ "opacity": 1 }, 500, function () { });
+                });
+            }, 5000);
+
+            $("#sidebar-top-home").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#home-top").offset().top
+                }, 500, 'swing');
+
+                $("#sidebar").animate({
+                    right: (-$("#sidebar").width()) + "",
+                }, 200, function () {
+                    $("#sidebar").css("display", "none");
+                    $("#menu-dropdown").show(150);
+                });
+                return false;
+            });
+
+            $("#nba_blog_block").click(function () {
+                window.location = window.location + "main_website/nba_blog";
+            });
+
+            $("#course-btn-link").click(function () {
+                $('html, body').animate({
+                    scrollTop: $("#course-header").offset().top
+                }, 500, 'swing');
+            });
+
+            $(".cover-bottom-scroll-arrow").on("click", function () {
+                $('html, body').animate({ scrollTop: $(window).height() }, 500, 'swing');
+            }
+            );
+
+
+
+
+            generateDAG();
+
+        }
+        );
+
+    </script>
+
+
+</html>
