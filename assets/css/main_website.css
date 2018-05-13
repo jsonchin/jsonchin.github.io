@@ -223,7 +223,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: rgba(0,0,0,0.8);
   padding-top:5%;
-  font-size:20px;
+  font-size:14px;
   vertical-align:middle;
 }
 .intro-row {
@@ -297,7 +297,7 @@ body {
   color: rgba(0,0,0,0.8);
   padding-top:5%;
   padding-bottom:5vh;
-  font-size:20px;
+  font-size:14px;
   vertical-align:middle;
   background-color:#FEFEFE;
   background-color:#f9f9f9;
