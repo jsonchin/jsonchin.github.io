@@ -216,7 +216,7 @@ body {
  */
 
 .intro {
-  min-height:110vh;
+  /* min-height:110vh; */
   height:auto;
   width:100%;
   background-color:#FFFFFF;
@@ -299,8 +299,9 @@ body {
   padding-bottom:5vh;
   font-size:14px;
   vertical-align:middle;
-  background-color:#FEFEFE;
-  background-color:#f9f9f9;
+  background-color:#FFFFFF;
+  /* background-color:#FEFEFE; */
+  /* background-color:#f9f9f9; */
   //background-color:#0080FF;
 
 }
@@ -336,6 +337,11 @@ body {
   margin-left:10vw;
 }
 
+.experience-row-middle {
+  /* margin-left:4vw; */
+  text-align: center;
+}
+
 .experience-panel-header-odd {
   //padding-top:1vh;
   //padding-left:1vw;
@@ -343,6 +349,18 @@ body {
 }
 
 .experience-panel-img-odd {
+  margin-right:1vw;
+  float:left;
+}
+
+.experience-panel-header-middle {
+  //padding-top:1vh;
+  //padding-left:1vw;
+  margin-top:1vh;
+  text-align: left;
+}
+
+.experience-panel-img-middle {
   margin-right:1vw;
   float:left;
 }
