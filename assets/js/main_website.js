@@ -3,12 +3,13 @@ function generateDAG() {
     var width = $("#d3-dag-container").width();
     var height = $("#d3-dag-container").height();
 
+    var semesters_l = ['SP16', 'SU16', 'FA16', 'SP17', 'FA17', 'SP18', 'FA18', 'SP19'];
 
     var xStart = width/12;
     var yMiddle = height/2;
 
     function calcX(k) {
-      return xStart + width/7*k;
+      return xStart + width/semesters_l.length*k;
     }
 
     var yStart = height/7;
@@ -16,9 +17,7 @@ function generateDAG() {
       return yMiddle/5*k + yStart;
     }
 
-    var semesters_l = ['SP16', 'SU16', 'FA16', 'SP17', 'FA17', 'SP18', 'FA18'];
-
-    var future_semesters = ['FA18'];
+    var future_semesters = ['SP19'];
 
     var semesters = [];
 
@@ -45,7 +44,7 @@ function generateDAG() {
         {'name':'CS170', 'department':'CS',
                 'x':calcX(3), 'y':calcY(2),
                 'full_name':'Efficient Algorithms and Intractable Problems'},
-        {'name':'CS176', 'department':'CS-N',
+        {'name':'CS176', 'department':'CS',
                 'x':calcX(6), 'y':calcY(2),
                 'full_name':'Algorithms for Computational Biology'},
         {'name':'CS188', 'department':'CS',
@@ -66,7 +65,10 @@ function generateDAG() {
         {'name':'CS161', 'department':'CS',
                 'x':calcX(5), 'y':calcY(1),
                 'full_name':'Computer Security'},
-        {'name':'CS168', 'department':'CS-N',
+        {'name':'CS164', 'department':'CS-N',
+                'x':calcX(7), 'y':calcY(1),
+                'full_name':'Programming Languages and Compilers'},
+        {'name':'CS168', 'department':'CS',
                 'x':calcX(6), 'y':calcY(0),
                 'full_name':'Introduction to the Internet: Architecture and Protocols'},
         {'name':'STAT133', 'department':'STAT',
@@ -102,6 +104,9 @@ function generateDAG() {
         {'name':'IND160', 'department':'EE',
                 'x':calcX(6), 'y':calcY(8),
                 'full_name':'Nonlinear and Discrete Optimization'},
+        {'name':'IND162', 'department':'EE',
+                'x':calcX(7), 'y':calcY(8),
+                'full_name':'Linear Programming and Network Flows'},
                 ];
     var nodesByName = {};
     for (i in nodes) {
@@ -119,6 +124,7 @@ function generateDAG() {
         {'source':'CS61C', 'target':'CS161', 'value':2},
         {'source':'CS61C', 'target':'CS162', 'value':2},
         {'source':'CS162', 'target':'CS168', 'value':2},
+        {'source':'CS162', 'target':'CS164', 'value':2},
         {'source':'STAT134', 'target':'STAT133', 'value':2},
         {'source':'STAT134', 'target':'STAT135', 'value':2},
         {'source':'STAT134', 'target':'STAT155', 'value':2},
@@ -131,7 +137,9 @@ function generateDAG() {
         {'source':'MATH54', 'target':'STAT135', 'value':2},
         {'source':'MATH54', 'target':'EE16A', 'value':2},
         {'source':'MATH54', 'target':'STAT151A', 'value':2},
-        {'source':'EE16A', 'target':'IND160', 'value':2},];
+        {'source':'EE16A', 'target':'IND160', 'value':2},
+        { 'source': 'IND160', 'target': 'IND162', 'value': 2 },
+    ];
 
 
 

@@ -5,3 +5,10 @@
 - About me
 - Experience
 - Academics
+
+
+## Running the website locally
+
+```
+bundle exec jekyll serve
+```
